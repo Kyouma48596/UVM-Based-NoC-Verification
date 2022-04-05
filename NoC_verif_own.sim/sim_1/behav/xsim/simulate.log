@@ -26,7 +26,7 @@ arr[CORE3_ADDR]=10
 arr[CORE4_ADDR]=11
 arr[CORE5_ADDR]=12
 UVM_INFO @ 0: reporter [RNTST] Running test noc_test...
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_test.sv(41) @ 0: uvm_test_top [ENV] core_selection_vector is: 111111
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_test.sv(41) @ 0: uvm_test_top [ENV] core_selection_vector is: 000011
 UVM_INFO /proj/xbuilds/SWIP/9999.0_0805_2155/installs/lin64/Vivado/2022.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_test.sv(52) @ 0: uvm_test_top [TEST] Test runphase
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 0: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Waiting for header_flit
@@ -35,18 +35,6 @@ UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 0: u
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 0: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 0: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 0: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(34) @ 0: uvm_test_top.env.agent[5].sequencer@@seq[          5] [SEQ] IN TASK BODY
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(50) @ 0: uvm_test_top.env.agent[5].sequencer@@seq[          5] [SEQ] Value of line count is =          15
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(51) @ 0: uvm_test_top.env.agent[5].sequencer@@seq[          5] [SEQ] Value of pkt count is =           3
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(34) @ 0: uvm_test_top.env.agent[4].sequencer@@seq[          4] [SEQ] IN TASK BODY
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(50) @ 0: uvm_test_top.env.agent[4].sequencer@@seq[          4] [SEQ] Value of line count is =          15
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(51) @ 0: uvm_test_top.env.agent[4].sequencer@@seq[          4] [SEQ] Value of pkt count is =           3
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(34) @ 0: uvm_test_top.env.agent[3].sequencer@@seq[          3] [SEQ] IN TASK BODY
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(50) @ 0: uvm_test_top.env.agent[3].sequencer@@seq[          3] [SEQ] Value of line count is =          15
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(51) @ 0: uvm_test_top.env.agent[3].sequencer@@seq[          3] [SEQ] Value of pkt count is =           3
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(34) @ 0: uvm_test_top.env.agent[2].sequencer@@seq[          2] [SEQ] IN TASK BODY
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(50) @ 0: uvm_test_top.env.agent[2].sequencer@@seq[          2] [SEQ] Value of line count is =          15
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(51) @ 0: uvm_test_top.env.agent[2].sequencer@@seq[          2] [SEQ] Value of pkt count is =           3
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(34) @ 0: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ] IN TASK BODY
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(50) @ 0: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ] Value of line count is =          15
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(51) @ 0: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ] Value of pkt count is =           3
@@ -71,495 +59,174 @@ UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 25000:
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 25000: uvm_test_top.env.agent[3].driver [DIVER] waiting for seq item
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 25000: uvm_test_top.env.agent[4].driver [DIVER] waiting for seq item
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 25000: uvm_test_top.env.agent[5].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[5].sequencer@@seq[          5] [SEQ]  IN Seq Value of core_seq_num is           5 vc_id  is = 01 , src_addr is 00010010 dst_addr is 00000000 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[4].sequencer@@seq[          4] [SEQ]  IN Seq Value of core_seq_num is           4 vc_id  is = 01 , src_addr is 00010001 dst_addr is 00000001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[3].sequencer@@seq[          3] [SEQ]  IN Seq Value of core_seq_num is           3 vc_id  is = 01 , src_addr is 00010000 dst_addr is 00010001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[2].sequencer@@seq[          2] [SEQ]  IN Seq Value of core_seq_num is           2 vc_id  is = 01 , src_addr is 00000010 dst_addr is 00000000 
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ]  IN Seq Value of core_seq_num is           1 vc_id  is = 01 , src_addr is 00000001 dst_addr is 00010010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[0].sequencer@@seq[          0] [SEQ]  IN Seq Value of core_seq_num is           0 vc_id  is = 01 , src_addr is 00000000 dst_addr is 00000001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 25000: uvm_test_top.env.agent[5].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[5].driver [DIVER] driving data (header): 00101000000000000001001000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 25000: uvm_test_top.env.agent[4].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[4].driver [DIVER] driving data (header): 00101000000000000001000100000001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 25000: uvm_test_top.env.agent[3].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[3].driver [DIVER] driving data (header): 00101000000000000001000000010001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 25000: uvm_test_top.env.agent[2].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[2].driver [DIVER] driving data (header): 00101000000000000000001000000000
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 25000: uvm_test_top.env.agent[0].sequencer@@seq[          0] [SEQ]  IN Seq Value of core_seq_num is           0 vc_id  is = 01 , src_addr is 00000000 dst_addr is 00010010 
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 25000: uvm_test_top.env.agent[1].driver [DIVER] got seq item
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[1].driver [DIVER] driving data (header): 00101000000000000000000100010010
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 25000: uvm_test_top.env.agent[0].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[0].driver [DIVER] driving data (header): 00101000000000000000000000000001
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 25000: uvm_test_top.env.agent[0].driver [DIVER] driving data (header): 00101000000000000000000000010010
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 35000: uvm_test_top.env.agent[0].monitor [MONITOR] Got header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 35000: uvm_test_top.env.agent[0].monitor [MONITOR] Waiting for payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 35000: uvm_test_top.env.agent[1].monitor [MONITOR] Got header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 35000: uvm_test_top.env.agent[1].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 35000: uvm_test_top.env.agent[2].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 35000: uvm_test_top.env.agent[2].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 35000: uvm_test_top.env.agent[3].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 35000: uvm_test_top.env.agent[3].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 35000: uvm_test_top.env.agent[4].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 35000: uvm_test_top.env.agent[4].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 35000: uvm_test_top.env.agent[5].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 35000: uvm_test_top.env.agent[5].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[5].driver [DIVER] driving data (payload): 00001110101111000011011001100011
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[4].driver [DIVER] driving data (payload): 00001010010110110100001101010101
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[3].driver [DIVER] driving data (payload): 00001001010111011010000010111010
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[2].driver [DIVER] driving data (payload): 00001001111010011100011101001011
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00001111000010011111101101111011
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00001100100110010000111011001110
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 125000: uvm_test_top.env.agent[5].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 125000: uvm_test_top.env.agent[4].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 125000: uvm_test_top.env.agent[3].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 125000: uvm_test_top.env.agent[2].monitor [MONITOR] Got payload_flit (000)
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00001100010011000100010110111001
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 125000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00001010110101000001101010000000
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 125000: uvm_test_top.env.agent[1].monitor [MONITOR] Got payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 125000: uvm_test_top.env.agent[0].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00001111010011011100101010011101
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00001101110100101011101000111101
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[2].driver [DIVER] driving data (payload): 00001110110010101101010011010100
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[3].driver [DIVER] driving data (payload): 00001010100000111000010101111011
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[4].driver [DIVER] driving data (payload): 00001010000110000000101010100001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[5].driver [DIVER] driving data (payload): 00001110101111100010111000100011
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 145000: uvm_test_top.env.agent[5].driver [DIVER] driving data (tailer): 01001000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 145000: uvm_test_top.env.agent[4].driver [DIVER] driving data (tailer): 01001000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 145000: uvm_test_top.env.agent[3].driver [DIVER] driving data (tailer): 01001000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 145000: uvm_test_top.env.agent[2].driver [DIVER] driving data (tailer): 01001000000000000000000000000000
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00001100010001110001110101111011
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 135000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00001000100100011100011000111001
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 145000: uvm_test_top.env.agent[1].driver [DIVER] driving data (tailer): 01001000000000000000000000000000
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 145000: uvm_test_top.env.agent[0].driver [DIVER] driving data (tailer): 01001000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 145000: uvm_test_top.env.agent[5].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 145000: uvm_test_top.env.agent[5].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 145000: uvm_test_top.env.agent[4].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 145000: uvm_test_top.env.agent[4].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 145000: uvm_test_top.env.agent[3].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 145000: uvm_test_top.env.agent[3].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 145000: uvm_test_top.env.agent[2].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 145000: uvm_test_top.env.agent[2].monitor [MONITOR] Sent a pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 145000: uvm_test_top.env.agent[1].monitor [MONITOR] Got tailer_flit (010)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 145000: uvm_test_top.env.agent[1].monitor [MONITOR] Sent a pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 145000: uvm_test_top.env.agent[0].monitor [MONITOR] Got tailer_flit (010)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 145000: uvm_test_top.env.agent[0].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 145000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           5
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 145000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           4
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 145000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           3
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 145000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           2
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 145000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           1
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 145000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           0
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 155000: uvm_test_top.env.agent[0].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 155000: uvm_test_top.env.agent[1].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 155000: uvm_test_top.env.agent[2].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 155000: uvm_test_top.env.agent[3].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 155000: uvm_test_top.env.agent[4].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 155000: uvm_test_top.env.agent[5].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 155000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 155000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 155000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 155000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 155000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 155000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Waiting for payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 156000: uvm_test_top.env.agent[0].monitor [MONITOR] Waiting for header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 156000: uvm_test_top.env.agent[1].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 156000: uvm_test_top.env.agent[2].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 156000: uvm_test_top.env.agent[3].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 156000: uvm_test_top.env.agent[4].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 156000: uvm_test_top.env.agent[5].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 165000: uvm_test_top.env.agent[5].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 165000: uvm_test_top.env.agent[4].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 165000: uvm_test_top.env.agent[3].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 165000: uvm_test_top.env.agent[2].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 165000: uvm_test_top.env.agent[1].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 165000: uvm_test_top.env.agent[0].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 175000: uvm_test_top.env.agent[0].driver [DIVER] waiting for seq item
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 175000: uvm_test_top.env.agent[1].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 175000: uvm_test_top.env.agent[2].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 175000: uvm_test_top.env.agent[3].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 175000: uvm_test_top.env.agent[4].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 175000: uvm_test_top.env.agent[5].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[5].sequencer@@seq[          5] [SEQ]  IN Seq Value of core_seq_num is           5 vc_id  is = 00 , src_addr is 00010010 dst_addr is 00000010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[4].sequencer@@seq[          4] [SEQ]  IN Seq Value of core_seq_num is           4 vc_id  is = 00 , src_addr is 00010001 dst_addr is 00000010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[3].sequencer@@seq[          3] [SEQ]  IN Seq Value of core_seq_num is           3 vc_id  is = 00 , src_addr is 00010000 dst_addr is 00000010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[2].sequencer@@seq[          2] [SEQ]  IN Seq Value of core_seq_num is           2 vc_id  is = 00 , src_addr is 00000010 dst_addr is 00000001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ]  IN Seq Value of core_seq_num is           1 vc_id  is = 00 , src_addr is 00000001 dst_addr is 00010010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[0].sequencer@@seq[          0] [SEQ]  IN Seq Value of core_seq_num is           0 vc_id  is = 00 , src_addr is 00000000 dst_addr is 00000010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 175000: uvm_test_top.env.agent[5].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[5].driver [DIVER] driving data (header): 00100000000000000001001000000010
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 175000: uvm_test_top.env.agent[4].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[4].driver [DIVER] driving data (header): 00100000000000000001000100000010
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 175000: uvm_test_top.env.agent[3].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[3].driver [DIVER] driving data (header): 00100000000000000001000000000010
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 175000: uvm_test_top.env.agent[2].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[2].driver [DIVER] driving data (header): 00100000000000000000001000000001
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ]  IN Seq Value of core_seq_num is           1 vc_id  is = 00 , src_addr is 00000001 dst_addr is 00000010 
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 175000: uvm_test_top.env.agent[0].sequencer@@seq[          0] [SEQ]  IN Seq Value of core_seq_num is           0 vc_id  is = 00 , src_addr is 00000000 dst_addr is 00010000 
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 175000: uvm_test_top.env.agent[1].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[1].driver [DIVER] driving data (header): 00100000000000000000000100010010
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[1].driver [DIVER] driving data (header): 00100000000000000000000100000010
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 175000: uvm_test_top.env.agent[0].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[0].driver [DIVER] driving data (header): 00100000000000000000000000000010
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 175000: uvm_test_top.env.agent[0].driver [DIVER] driving data (header): 00100000000000000000000000010000
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 185000: uvm_test_top.env.agent[0].monitor [MONITOR] Got header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 185000: uvm_test_top.env.agent[0].monitor [MONITOR] Waiting for payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 185000: uvm_test_top.env.agent[1].monitor [MONITOR] Got header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 185000: uvm_test_top.env.agent[1].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 185000: uvm_test_top.env.agent[2].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 185000: uvm_test_top.env.agent[2].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 185000: uvm_test_top.env.agent[3].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 185000: uvm_test_top.env.agent[3].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 185000: uvm_test_top.env.agent[4].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 185000: uvm_test_top.env.agent[4].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 185000: uvm_test_top.env.agent[5].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 185000: uvm_test_top.env.agent[5].monitor [MONITOR] Waiting for payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 215000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 215000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 215000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 215000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered header
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 215000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 215000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 215000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 215000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 235000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 235000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 235000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 235000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 235000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 245000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 245000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 245000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 245000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 245000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 255000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 255000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 255000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 255000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 255000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 265000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 265000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 265000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 265000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 265000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 265000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 265000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 265000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 265000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 265000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 265000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 265000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[5].driver [DIVER] driving data (payload): 00000111101001100111110001011101
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[4].driver [DIVER] driving data (payload): 00000101001000001010101111001000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[3].driver [DIVER] driving data (payload): 00000100001100001111111100001100
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[2].driver [DIVER] driving data (payload): 00000000100011101101100100011111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000011111100111011101111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000111010000011010001100001110
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 275000: uvm_test_top.env.agent[5].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 275000: uvm_test_top.env.agent[4].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 275000: uvm_test_top.env.agent[3].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 275000: uvm_test_top.env.agent[2].monitor [MONITOR] Got payload_flit (000)
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000100111001000111011101101000
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 275000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000111111100101100001000110010
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 275000: uvm_test_top.env.agent[1].monitor [MONITOR] Got payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 275000: uvm_test_top.env.agent[0].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 275000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 275000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 275000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000110101100011110000001010001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000100011111111111101101001110
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[2].driver [DIVER] driving data (payload): 00000011101101110101001111111001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[3].driver [DIVER] driving data (payload): 00000000111001011100100001101010
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[4].driver [DIVER] driving data (payload): 00000000111110001110111100101010
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[5].driver [DIVER] driving data (payload): 00000010111010111110100100111011
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 295000: uvm_test_top.env.agent[5].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 295000: uvm_test_top.env.agent[4].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 295000: uvm_test_top.env.agent[3].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 295000: uvm_test_top.env.agent[2].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000101111000010110111101101001
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 285000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000000100101111011110001001101
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 295000: uvm_test_top.env.agent[1].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 295000: uvm_test_top.env.agent[0].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 295000: uvm_test_top.env.agent[5].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 295000: uvm_test_top.env.agent[5].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 295000: uvm_test_top.env.agent[4].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 295000: uvm_test_top.env.agent[4].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 295000: uvm_test_top.env.agent[3].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 295000: uvm_test_top.env.agent[3].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 295000: uvm_test_top.env.agent[2].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 295000: uvm_test_top.env.agent[2].monitor [MONITOR] Sent a pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 295000: uvm_test_top.env.agent[1].monitor [MONITOR] Got tailer_flit (010)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 295000: uvm_test_top.env.agent[1].monitor [MONITOR] Sent a pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 295000: uvm_test_top.env.agent[0].monitor [MONITOR] Got tailer_flit (010)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 295000: uvm_test_top.env.agent[0].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 295000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           5
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 295000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           4
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 295000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           3
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 295000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           2
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 295000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           1
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 295000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           0
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 295000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 295000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 295000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered payload
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 295000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 295000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 305000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 305000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 305000: uvm_test_top.env.agent[0].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 305000: uvm_test_top.env.agent[1].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 305000: uvm_test_top.env.agent[2].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 305000: uvm_test_top.env.agent[3].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 305000: uvm_test_top.env.agent[4].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 305000: uvm_test_top.env.agent[5].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 305000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 305000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 305000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 305000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 305000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 305000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got header_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 305000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 305000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got header_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 305000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Waiting for payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 306000: uvm_test_top.env.agent[0].monitor [MONITOR] Waiting for header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 306000: uvm_test_top.env.agent[1].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 306000: uvm_test_top.env.agent[2].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 306000: uvm_test_top.env.agent[3].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 306000: uvm_test_top.env.agent[4].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 306000: uvm_test_top.env.agent[5].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 315000: uvm_test_top.env.agent[5].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 315000: uvm_test_top.env.agent[4].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 315000: uvm_test_top.env.agent[3].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 315000: uvm_test_top.env.agent[2].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 315000: uvm_test_top.env.agent[1].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 315000: uvm_test_top.env.agent[0].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 315000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 315000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 315000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 315000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 315000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 325000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 325000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 325000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Waiting for header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 325000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got tailer_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 325000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Sent pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 325000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Waiting for header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 325000: uvm_test_top.env.agent[0].driver [DIVER] waiting for seq item
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 325000: uvm_test_top.env.agent[1].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 325000: uvm_test_top.env.agent[2].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 325000: uvm_test_top.env.agent[3].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 325000: uvm_test_top.env.agent[4].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 325000: uvm_test_top.env.agent[5].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 325000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[5].sequencer@@seq[          5] [SEQ]  IN Seq Value of core_seq_num is           5 vc_id  is = 00 , src_addr is 00010010 dst_addr is 00010001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[4].sequencer@@seq[          4] [SEQ]  IN Seq Value of core_seq_num is           4 vc_id  is = 00 , src_addr is 00010001 dst_addr is 00010000 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[3].sequencer@@seq[          3] [SEQ]  IN Seq Value of core_seq_num is           3 vc_id  is = 00 , src_addr is 00010000 dst_addr is 00000001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[2].sequencer@@seq[          2] [SEQ]  IN Seq Value of core_seq_num is           2 vc_id  is = 00 , src_addr is 00000010 dst_addr is 00010010 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ]  IN Seq Value of core_seq_num is           1 vc_id  is = 00 , src_addr is 00000001 dst_addr is 00010001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[0].sequencer@@seq[          0] [SEQ]  IN Seq Value of core_seq_num is           0 vc_id  is = 00 , src_addr is 00000000 dst_addr is 00000001 
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 325000: uvm_test_top.env.agent[5].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[5].driver [DIVER] driving data (header): 00100000000000000001001000010001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 325000: uvm_test_top.env.agent[4].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[4].driver [DIVER] driving data (header): 00100000000000000001000100010000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 325000: uvm_test_top.env.agent[3].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[3].driver [DIVER] driving data (header): 00100000000000000001000000000001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 325000: uvm_test_top.env.agent[2].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[2].driver [DIVER] driving data (header): 00100000000000000000001000010010
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[1].sequencer@@seq[          1] [SEQ]  IN Seq Value of core_seq_num is           1 vc_id  is = 00 , src_addr is 00000001 dst_addr is 00000010 
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_sequence.sv(88) @ 325000: uvm_test_top.env.agent[0].sequencer@@seq[          0] [SEQ]  IN Seq Value of core_seq_num is           0 vc_id  is = 00 , src_addr is 00000000 dst_addr is 00010000 
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 325000: uvm_test_top.env.agent[1].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[1].driver [DIVER] driving data (header): 00100000000000000000000100010001
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[1].driver [DIVER] driving data (header): 00100000000000000000000100000010
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(63) @ 325000: uvm_test_top.env.agent[0].driver [DIVER] got seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[0].driver [DIVER] driving data (header): 00100000000000000000000000000001
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(73) @ 325000: uvm_test_top.env.agent[0].driver [DIVER] driving data (header): 00100000000000000000000000010000
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 335000: uvm_test_top.env.agent[0].monitor [MONITOR] Got header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 335000: uvm_test_top.env.agent[0].monitor [MONITOR] Waiting for payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 335000: uvm_test_top.env.agent[1].monitor [MONITOR] Got header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 335000: uvm_test_top.env.agent[1].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 335000: uvm_test_top.env.agent[2].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 335000: uvm_test_top.env.agent[2].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 335000: uvm_test_top.env.agent[3].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 335000: uvm_test_top.env.agent[3].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 335000: uvm_test_top.env.agent[4].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 335000: uvm_test_top.env.agent[4].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(65) @ 335000: uvm_test_top.env.agent[5].monitor [MONITOR] Got header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(70) @ 335000: uvm_test_top.env.agent[5].monitor [MONITOR] Waiting for payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 335000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 335000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 335000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 335000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 335000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 335000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 335000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 335000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 335000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 355000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 355000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 355000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 365000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 365000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 375000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 375000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 375000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for header_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 335000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 335000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got header_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 335000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Waiting for payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 375000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 375000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 375000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 385000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 385000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 385000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 385000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 385000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 395000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 395000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 395000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 395000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 395000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered tailer
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 405000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got tailer_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 405000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Sent pkt
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 405000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Waiting for header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 405000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 405000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 405000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 405000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered tailer
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 415000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got tailer_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 415000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Sent pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 415000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 415000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 415000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 425000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[5].driver [DIVER] driving data (payload): 00000010001001110011001101100100
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[4].driver [DIVER] driving data (payload): 00000110101001001011100011010101
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[3].driver [DIVER] driving data (payload): 00000111111001001011111101101110
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[2].driver [DIVER] driving data (payload): 00000011010110101011111101001110
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000111111000110111000110101100
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000001001011011101010001001100
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 425000: uvm_test_top.env.agent[5].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 425000: uvm_test_top.env.agent[4].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 425000: uvm_test_top.env.agent[3].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 425000: uvm_test_top.env.agent[2].monitor [MONITOR] Got payload_flit (000)
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 415000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered header
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 415000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 415000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 425000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000101011101111011110110101101
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 425000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000001000101100011100111110101
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 425000: uvm_test_top.env.agent[1].monitor [MONITOR] Got payload_flit (000)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(72) @ 425000: uvm_test_top.env.agent[0].monitor [MONITOR] Got payload_flit (000)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 425000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 425000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 425000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 425000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000000110110000101011101100110
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000111010111100010000000111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[2].driver [DIVER] driving data (payload): 00000100010111100010110111011001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[3].driver [DIVER] driving data (payload): 00000011110001101000100100000111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[4].driver [DIVER] driving data (payload): 00000011001111100001111100011111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[5].driver [DIVER] driving data (payload): 00000011111100110011001010100001
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 435000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 435000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 435000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 445000: uvm_test_top.env.agent[5].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 445000: uvm_test_top.env.agent[4].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 445000: uvm_test_top.env.agent[3].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 445000: uvm_test_top.env.agent[2].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[0].driver [DIVER] driving data (payload): 00000000010010001100001001001110
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(83) @ 435000: uvm_test_top.env.agent[1].driver [DIVER] driving data (payload): 00000101001010110101000010100011
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 435000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Got tailer_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 435000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Sent pkt
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 435000: uvm_test_top.env.agent[5].monitor [MONITOR_OUT] Waiting for header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 445000: uvm_test_top.env.agent[1].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(88) @ 445000: uvm_test_top.env.agent[0].driver [DIVER] driving data (tailer): 01000000000000000000000000000000
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 445000: uvm_test_top.env.agent[5].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 445000: uvm_test_top.env.agent[5].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 445000: uvm_test_top.env.agent[4].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 445000: uvm_test_top.env.agent[4].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 445000: uvm_test_top.env.agent[3].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 445000: uvm_test_top.env.agent[3].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 445000: uvm_test_top.env.agent[2].monitor [MONITOR] Got tailer_flit (010)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 445000: uvm_test_top.env.agent[2].monitor [MONITOR] Sent a pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 445000: uvm_test_top.env.agent[1].monitor [MONITOR] Got tailer_flit (010)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 445000: uvm_test_top.env.agent[1].monitor [MONITOR] Sent a pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(87) @ 445000: uvm_test_top.env.agent[0].monitor [MONITOR] Got tailer_flit (010)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(93) @ 445000: uvm_test_top.env.agent[0].monitor [MONITOR] Sent a pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 445000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           5
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 445000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           4
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 445000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           3
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 445000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           2
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 445000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           1
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_coverage.sv(236) @ 445000: uvm_test_top.env.coverage [COVERAGE] Got a txn to sample for core           0
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 455000: uvm_test_top.env.agent[0].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 455000: uvm_test_top.env.agent[1].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 455000: uvm_test_top.env.agent[2].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 455000: uvm_test_top.env.agent[3].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 455000: uvm_test_top.env.agent[4].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(93) @ 455000: uvm_test_top.env.agent[5].driver [DIVER] driving data (invalid): 01111111111111111111111111111111
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 456000: uvm_test_top.env.agent[0].monitor [MONITOR] Waiting for header_flit (001)
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 456000: uvm_test_top.env.agent[1].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 456000: uvm_test_top.env.agent[2].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 456000: uvm_test_top.env.agent[3].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 456000: uvm_test_top.env.agent[4].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(63) @ 456000: uvm_test_top.env.agent[5].monitor [MONITOR] Waiting for header_flit (001)
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 465000: uvm_test_top.env.agent[5].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 465000: uvm_test_top.env.agent[4].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 465000: uvm_test_top.env.agent[3].driver [DIVER] finished drive_data_in
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 465000: uvm_test_top.env.agent[2].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 465000: uvm_test_top.env.agent[1].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(66) @ 465000: uvm_test_top.env.agent[0].driver [DIVER] finished drive_data_in
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 475000: uvm_test_top.env.agent[0].driver [DIVER] waiting for seq item
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 475000: uvm_test_top.env.agent[1].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 475000: uvm_test_top.env.agent[2].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 475000: uvm_test_top.env.agent[3].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 475000: uvm_test_top.env.agent[4].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_driver.sv(61) @ 475000: uvm_test_top.env.agent[5].driver [DIVER] waiting for seq item
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 475000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 475000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 475000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 475000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Waiting for payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 475000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 475000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got header_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 475000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 485000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 485000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 485000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 485000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 485000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 485000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 495000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 495000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 495000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 495000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 505000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 505000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 505000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 505000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 505000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 505000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 515000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 515000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 515000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 515000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 515000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 515000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 515000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 525000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 525000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 525000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 525000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 525000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 525000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 525000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 525000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 525000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 525000: uvm_test_top.env.agent[0].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 525000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 525000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 535000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 535000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 535000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 535000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 555000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 475000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got header_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 475000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 555000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 555000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 555000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 555000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 555000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 565000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 565000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 565000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 565000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 565000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 565000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 565000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 565000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 575000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 575000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 565000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 575000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 575000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 575000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 575000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 575000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered tailer
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 575000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered tailer
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 575000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Triggered tailer
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 585000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Got tailer_flit
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 585000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Sent pkt
 UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 585000: uvm_test_top.env.agent[3].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 585000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 585000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 585000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 585000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 585000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 585000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 585000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 595000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 595000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 595000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 605000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 605000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 605000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 615000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 615000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 615000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 615000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(112) @ 615000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Got header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(117) @ 615000: uvm_test_top.env.agent[1].monitor [MONITOR_OUT] Waiting for payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 625000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 625000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 625000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for header_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 635000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 635000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 635000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 645000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 645000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 655000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(149) @ 655000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Triggered tailer
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(147) @ 665000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered header
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(148) @ 675000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Triggered payload
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 675000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(121) @ 685000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got a payload_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 695000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Got tailer_flit
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 695000: uvm_test_top.env.agent[4].monitor [MONITOR_OUT] Sent pkt
-UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 695000: uvm_test_top.env.agent[4].moni
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(130) @ 585000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Got tailer_flit
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(135) @ 585000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Sent pkt
+UVM_INFO ../../../../NoC_verif_own.srcs/sources_1/new/noc_monitor.sv(110) @ 585000: uvm_test_top.env.agent[2].monitor [MONITOR_OUT] Waiting for header_flit

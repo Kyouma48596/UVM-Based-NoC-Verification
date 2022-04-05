@@ -153,7 +153,7 @@ extern "C" {
 		int callingProcessOffset = topOffset() ;
 		char* SP ;
 		void* oldSPcontext = DPIGetCurrentContext();
-		SP = DPIInitializeFunction(IP + 429824, 168, 8717208) ;
+		SP = DPIInitializeFunction(IP + 429824, 168, 8718720) ;
 		char driver0[32] ;
 		for(int i = 0 ; i < 32 ; ++i) driver0[i] = 0 ;
 		char driver1[32] ;

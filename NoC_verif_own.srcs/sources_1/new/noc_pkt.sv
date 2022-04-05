@@ -34,6 +34,8 @@ constraint dst_col_con {dst_addr[3:0] inside {[4'h0:cl]};}
 	endfunction : new
 
 	function void post_randomize();
+		//this stuff is self-explanatory ig, the loop in line 48 reads the payloads which were written into noc_pkg by noc_sequence.
+		//(we're using the noc_pkg to access it because direct access is not allowed)
 		header_flit = {1'b0,1'b0,1'b1,vc_id,11'b0,src_addr,dst_addr};
 		payload_flit = new[payload.size];
 		foreach(payload[i])

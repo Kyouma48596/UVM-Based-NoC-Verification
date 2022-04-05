@@ -37,7 +37,7 @@ class noc_test extends uvm_test;
 		foreach(core_selection_vector[i]) begin
 			core_selection_vector[i] = ($random()%2);
 		end
-		core_selection_vector = {1,1,1,1,1,1};
+		core_selection_vector = {0,0,0,0,1,1}; //override for directed testing
 		`uvm_info("ENV", $sformatf("core_selection_vector is: %b", core_selection_vector), UVM_INFO)
 		noc_pkg::core_selection_vector = core_selection_vector;
 		

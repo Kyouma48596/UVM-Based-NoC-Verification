@@ -406,3 +406,33 @@
   CREATE_STREAM @0 {NAME:seq[          2] T:Transactions SCOPE:uvm_test_top.env.agent[2].sequencer STREAM:2623}
   CREATE_STREAM @0 {NAME:seq[          1] T:Transactions SCOPE:uvm_test_top.env.agent[1].sequencer STREAM:2626}
   CREATE_STREAM @0 {NAME:seq[          0] T:Transactions SCOPE:uvm_test_top.env.agent[0].sequencer STREAM:2629}
+  CREATE_STREAM @0 {NAME:seq[          5] T:Transactions SCOPE:uvm_test_top.env.agent[5].sequencer STREAM:2614}
+  CREATE_STREAM @0 {NAME:seq[          4] T:Transactions SCOPE:uvm_test_top.env.agent[4].sequencer STREAM:2617}
+  CREATE_STREAM @0 {NAME:seq[          3] T:Transactions SCOPE:uvm_test_top.env.agent[3].sequencer STREAM:2620}
+  CREATE_STREAM @0 {NAME:seq[          2] T:Transactions SCOPE:uvm_test_top.env.agent[2].sequencer STREAM:2623}
+  CREATE_STREAM @0 {NAME:seq[          1] T:Transactions SCOPE:uvm_test_top.env.agent[1].sequencer STREAM:2626}
+  CREATE_STREAM @0 {NAME:seq[          0] T:Transactions SCOPE:uvm_test_top.env.agent[0].sequencer STREAM:2629}
+  CREATE_STREAM @0 {NAME:seq[          5] T:Transactions SCOPE:uvm_test_top.env.agent[5].sequencer STREAM:2614}
+  CREATE_STREAM @0 {NAME:seq[          4] T:Transactions SCOPE:uvm_test_top.env.agent[4].sequencer STREAM:2617}
+  CREATE_STREAM @0 {NAME:seq[          3] T:Transactions SCOPE:uvm_test_top.env.agent[3].sequencer STREAM:2620}
+  CREATE_STREAM @0 {NAME:seq[          2] T:Transactions SCOPE:uvm_test_top.env.agent[2].sequencer STREAM:2623}
+  CREATE_STREAM @0 {NAME:seq[          1] T:Transactions SCOPE:uvm_test_top.env.agent[1].sequencer STREAM:2626}
+  CREATE_STREAM @0 {NAME:seq[          0] T:Transactions SCOPE:uvm_test_top.env.agent[0].sequencer STREAM:2629}
+  CREATE_STREAM @0 {NAME:seq[          5] T:Transactions SCOPE:uvm_test_top.env.agent[5].sequencer STREAM:2614}
+  CREATE_STREAM @0 {NAME:seq[          4] T:Transactions SCOPE:uvm_test_top.env.agent[4].sequencer STREAM:2617}
+  CREATE_STREAM @0 {NAME:seq[          3] T:Transactions SCOPE:uvm_test_top.env.agent[3].sequencer STREAM:2620}
+  CREATE_STREAM @0 {NAME:seq[          2] T:Transactions SCOPE:uvm_test_top.env.agent[2].sequencer STREAM:2623}
+  CREATE_STREAM @0 {NAME:seq[          1] T:Transactions SCOPE:uvm_test_top.env.agent[1].sequencer STREAM:2626}
+  CREATE_STREAM @0 {NAME:seq[          0] T:Transactions SCOPE:uvm_test_top.env.agent[0].sequencer STREAM:2629}
+  CREATE_STREAM @0 {NAME:seq[          5] T:Transactions SCOPE:uvm_test_top.env.agent[5].sequencer STREAM:2614}
+  CREATE_STREAM @0 {NAME:seq[          4] T:Transactions SCOPE:uvm_test_top.env.agent[4].sequencer STREAM:2617}
+  CREATE_STREAM @0 {NAME:seq[          3] T:Transactions SCOPE:uvm_test_top.env.agent[3].sequencer STREAM:2620}
+  CREATE_STREAM @0 {NAME:seq[          2] T:Transactions SCOPE:uvm_test_top.env.agent[2].sequencer STREAM:2623}
+  CREATE_STREAM @0 {NAME:seq[          1] T:Transactions SCOPE:uvm_test_top.env.agent[1].sequencer STREAM:2626}
+  CREATE_STREAM @0 {NAME:seq[          0] T:Transactions SCOPE:uvm_test_top.env.agent[0].sequencer STREAM:2629}
+  CREATE_STREAM @0 {NAME:seq[          5] T:Transactions SCOPE:uvm_test_top.env.agent[5].sequencer STREAM:2614}
+  CREATE_STREAM @0 {NAME:seq[          4] T:Transactions SCOPE:uvm_test_top.env.agent[4].sequencer STREAM:2617}
+  CREATE_STREAM @0 {NAME:seq[          3] T:Transactions SCOPE:uvm_test_top.env.agent[3].sequencer STREAM:2620}
+  CREATE_STREAM @0 {NAME:seq[          2] T:Transactions SCOPE:uvm_test_top.env.agent[2].sequencer STREAM:2623}
+  CREATE_STREAM @0 {NAME:seq[          1] T:Transactions SCOPE:uvm_test_top.env.agent[1].sequencer STREAM:2626}
+  CREATE_STREAM @0 {NAME:seq[          0] T:Transactions SCOPE:uvm_test_top.env.agent[0].sequencer STREAM:2629}
