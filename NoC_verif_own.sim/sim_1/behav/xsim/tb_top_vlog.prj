@@ -1,40 +1,4 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../NoC_verif_own.srcs/sources_1/new" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/IRS.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/allot_vc.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/asynch_comparator.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/demux_16.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/dff_asynch_clr.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/dff_synch_clr.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/dff_synch_reset.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/dff_synch_set.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/encoder.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/falling_edge_pulse_generator.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/fop.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/gray_mod8.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/ip_chnl.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/ip_link.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/jk_ff.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/memory.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/mesh_router2x3.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/mux.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/op_core.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/op_data_path.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/op_link1.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/op_link2.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/op_link3.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/op_link4.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/priority_encoder.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/register_1bit.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/register_32bit.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/register_4bit.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/round_robin_req.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/router_fifo.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/routing_algo_mesh.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/rr_arbiter.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/rr_comb_new.v" \
-"../../../../NoC_verif_own.srcs/sources_1/imports/RTL/top_module.v" \
-
 sv xil_defaultlib  --include "../../../../NoC_verif_own.srcs/sources_1/new" \
 "../../../../NoC_verif_own.srcs/sources_1/new/noc_pkg.sv" \
 "../../../../NoC_verif_own.srcs/sources_1/new/noc_if.sv" \

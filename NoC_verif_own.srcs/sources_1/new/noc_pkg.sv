@@ -2,17 +2,30 @@ package noc_pkg;
 
 parameter RANDOM_SEED = 2;
 
+`ifdef 2x2
+parameter NO_OF_ROWS =2;
+parameter NO_OF_COLUMNS =2;
+`endif
+
+`ifdef 2x3
 parameter NO_OF_ROWS =2;
 parameter NO_OF_COLUMNS =3;
+`endif
 
-//parameter NO_OF_ROWS =3;
-//parameter NO_OF_COLUMNS =3;
+`ifdef 3x3
+parameter NO_OF_ROWS =3;
+parameter NO_OF_COLUMNS =3;
+`endif
 
-//parameter NO_OF_COLUMNS =3;
-//parameter NO_OF_COLUMNS =4;
+`ifdef 3x4
+parameter NO_OF_COLUMNS =3;
+parameter NO_OF_COLUMNS =4;
+`endif
 
-//parameter NO_OF_ROWS =4;
-//parameter NO_OF_COLUMNS =4;
+`ifdef 4x4
+parameter NO_OF_ROWS =4;
+parameter NO_OF_COLUMNS =4;
+`endif
 
 parameter TOTAL_CORES = NO_OF_ROWS * NO_OF_COLUMNS;
 parameter TOTAL_PAYLOADS_PER_PACKET =2;

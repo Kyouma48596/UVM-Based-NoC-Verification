@@ -7,7 +7,7 @@ class noc_test extends uvm_test;
 	noc_sequence seq[TOTAL_CORES];
 	my_noc_config noc_config0;
 	bit core_selection_vector[TOTAL_CORES-1:0];
-	//int dummy = $random(RANDOM_SEED);
+	int dummy = $random(RANDOM_SEED);
 /*-------------------------------------------------------------------------------
 -- UVM Factory register
 -------------------------------------------------------------------------------*/
@@ -37,7 +37,7 @@ class noc_test extends uvm_test;
 		foreach(core_selection_vector[i]) begin
 			core_selection_vector[i] = ($random()%2);
 		end
-		core_selection_vector = {0,0,0,0,1,1}; //override for directed testing
+		//core_selection_vector = {0,0,0,1,0,0,0,1,1}; //override for directed testing
 		`uvm_info("ENV", $sformatf("core_selection_vector is: %b", core_selection_vector), UVM_INFO)
 		noc_pkg::core_selection_vector = core_selection_vector;
 		

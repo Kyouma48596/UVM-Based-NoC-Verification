@@ -55,7 +55,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="276"/>
+    <Option Name="WTXSimLaunchSim" Val="291"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -85,382 +85,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/IRS.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/IRS.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/allot_vc.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/allot_vc.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/asynch_comparator.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/asynch_comparator.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/demux_16.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/demux_16.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_asynch_clr.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_asynch_clr.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_synch_clr.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_synch_clr.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_synch_reset.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_synch_reset.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_synch_set.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_synch_set.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/encoder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/encoder.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/falling_edge_pulse_generator.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/falling_edge_pulse_generator.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/fop.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/fop.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/gray_mod8.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/gray_mod8.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/ip_chnl.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/ip_chnl.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/ip_link.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/ip_link.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/jk_ff.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/jk_ff.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/memory.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/memory.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router2x3.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router2x3.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/mux.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mux.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/op_core.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_core.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/op_data_path.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_data_path.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link1.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link1.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link2.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link2.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link3.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link3.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link4.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link4.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/priority_encoder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/priority_encoder.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/register_1bit.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/register_1bit.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/register_32bit.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/register_32bit.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/register_4bit.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/register_4bit.v"/>
-          <Attr Name="ImportTime" Val="1643858467"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/round_robin_req.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/round_robin_req.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/router_fifo.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/router_fifo.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/routing_algo_mesh.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/routing_algo_mesh.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/rr_arbiter.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/rr_arbiter.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/rr_comb_new.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/rr_comb_new.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/top_module.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/top_module.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_agent.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_pkt.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/my_noc_config.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_monitor.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_test.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_driver.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_coverage.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_env.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_sequence.sv">
-        <FileInfo SFType="VHeader">
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/noc_pkg.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/noc_if.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -475,6 +99,455 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/IRS.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/IRS.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/allot_vc.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/allot_vc.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/asynch_comparator.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/asynch_comparator.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/demux_16.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/demux_16.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_asynch_clr.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_asynch_clr.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_synch_clr.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_synch_clr.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_synch_reset.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_synch_reset.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/dff_synch_set.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/dff_synch_set.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/encoder.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/encoder.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/falling_edge_pulse_generator.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/falling_edge_pulse_generator.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/fop.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/fop.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/gray_mod8.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/gray_mod8.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/ip_chnl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/ip_chnl.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/ip_link.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/ip_link.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/jk_ff.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/jk_ff.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/memory.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/memory.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router2x2.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router2x2.v"/>
+          <Attr Name="ImportTime" Val="1649306204"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router2x3.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router2x3.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router3x3.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router3x3.v"/>
+          <Attr Name="ImportTime" Val="1649306243"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router3x4.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router3x4.v"/>
+          <Attr Name="ImportTime" Val="1649306329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router4x4.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router4x4.v"/>
+          <Attr Name="ImportTime" Val="1649306343"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mux.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mux.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/op_core.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_core.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/op_data_path.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_data_path.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link1.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link1.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link2.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link2.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link3.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link3.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/op_link4.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/op_link4.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/priority_encoder.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/priority_encoder.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/register_1bit.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/register_1bit.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/register_32bit.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/register_32bit.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/register_4bit.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/register_4bit.v"/>
+          <Attr Name="ImportTime" Val="1643858467"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/round_robin_req.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/round_robin_req.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/router_fifo.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/router_fifo.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/routing_algo_mesh.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/routing_algo_mesh.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/rr_arbiter.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/rr_arbiter.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/rr_comb_new.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/rr_comb_new.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/top_module.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/top_module.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_agent.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_pkt.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/my_noc_config.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_monitor.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_test.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_driver.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_coverage.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_env.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_sequence.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/noc_pkg.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/RTL/gray_mod6.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -485,6 +558,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/core7.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core12.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core11.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core10.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core14.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core13.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core15.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core8.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core9.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="tb_top"/>
@@ -523,6 +605,7 @@
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_top_behav.wcfg"/>
+        <Option Name="xsim.compile.xvlog.more_options" Val="-d 2x3=1"/>
         <Option Name="xsim.elaborate.xelab.more_options" Val="-timescale 1ns/1ps"/>
         <Option Name="xsim.elaborate.coverage.type" Val="sbc"/>
         <Option Name="xsim.elaborate.coverage.library" Val="true"/>
@@ -557,9 +640,7 @@
   <Runs Version="1" Minor="15">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7k70tfbv676-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
         <Step Id="synth_design"/>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
@@ -568,9 +649,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k70tfbv676-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

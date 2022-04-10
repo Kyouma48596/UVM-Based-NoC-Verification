@@ -26,83 +26,92 @@ noc_pkt txns_out[TOTAL_CORES];
 	covergroup mesh_cg_in with function sample(int index);
 		//option.per_instance = 1;
 		SRC_ADDR: coverpoint (src_addr_in[index]) {
-		      //   bins valid[] = {
-		      //                      8'h00,8'h01,8'h02,8'h03,
-		      //                      8'h10,8'h11,8'h12,8'h13,
-		      //                      8'h20,8'h21,8'h22,8'h23,
-		      //                      8'h30,8'h31,8'h32,8'h33
-		      //                  };
-		      //	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};
-		        
-		        
-		      //  bins valid[] = {8'h00,8'h01,8'h10,8'h11};
-		      //	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
+		`ifdef 2x2
+	        bins valid[] = {
+	        					8'h00,8'h01,
+	        					8'h10,8'h11
+	        			   };
+	      	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
+	    `endif
+	    `ifdef 2x3
+	        bins valid[] = {	
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12
+	                       };
+	      	illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
+	    `endif
+	    `ifdef 3x3
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12,
+	                            8'h20,8'h21,8'h22,
+	                            8'h30,8'h31,8'h32
+	                       };
+	     	illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:8'h2F],[8'h33:$]};
+	    `endif
+	    `ifdef 3x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23
+	                       };
+	     	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
+	    `endif
+	    `ifdef 4x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23,
+	                            8'h30,8'h31,8'h32,8'h33
+	                       };
+	      	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};			
+	    `endif
 
-		 //        bins valid[] = {
-		 //                           8'h00,8'h01,8'h02,
-		 //                           8'h10,8'h11,8'h12,
-		 //                           8'h20,8'h21,8'h22,
-		 //                           8'h30,8'h31,8'h32
-		 //                       };
-		 //     	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:$]};
-			
-		        
-		  //       bins valid[] = {
-		  //                          8'h00,8'h01,8'h02,8'h03,
-		  //                          8'h10,8'h11,8'h12,8'h13,
-		  //                          8'h20,8'h21,8'h22,8'h23
-		  //                      };
-		  //    	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
-		 
-         bins valid[] = {
-                            8'h00,8'h01,8'h02,
-                            8'h10,8'h11,8'h12
-                        };
-      	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
-		  
-		  
-		  //       bins valid[] = {
-		  //                          8'h00,8'h01,
-		  //                          8'h10,8'h11
-		  //                      };
-		  //    	 illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
 		 //option.weight=0;
 		}
 		DST_ADDR: coverpoint (dst_addr_in[index]) {
-		//         bins valid[] = {
-		//                            8'h00,8'h01,8'h02,8'h03,
-		//                            8'h10,8'h11,8'h12,8'h13,
-		//                            8'h20,8'h21,8'h22,8'h23,
-		//                            8'h30,8'h31,8'h32,8'h33
-		//                        };
-		//	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};
-		//	bins valid[] = {8'h00,8'h01,8'h10,8'h11};
-		//	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
-
-
-		//         bins valid[] = {
-		//                            8'h00,8'h01,8'h02,
-		//                            8'h10,8'h11,8'h12,
-		//                            8'h20,8'h21,8'h22,
-		//                            8'h30,8'h31,8'h32
-		//                        };
-		//      	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:$]};
-
-         bins valid[] = {
-                            8'h00,8'h01,8'h02,
-                            8'h10,8'h11,8'h12
-                        };
-      	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
-		  
-		// bins valid[] = {
-		//                            8'h00,8'h01,8'h02,8'h03,
-		//                            8'h10,8'h11,8'h12,8'h13,
-		//                            8'h20,8'h21,8'h22,8'h23
-		//                        };
-		//      	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
-		//
-
-		       //option.weight=0;
+		`ifdef 2x2
+	        bins valid[] = {
+	        					8'h00,8'h01,
+	        					8'h10,8'h11
+	        			   };
+	      	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
+	    `endif
+	    `ifdef 2x3
+	        bins valid[] = {	
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12
+	                       };
+	      	illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
+	    `endif
+	    `ifdef 3x3
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12,
+	                            8'h20,8'h21,8'h22,
+	                            8'h30,8'h31,8'h32
+	                       };
+	     	illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:8'h2F],[8'h33:$]};
+	    `endif
+	    `ifdef 3x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23
+	                       };
+	     	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
+	    `endif
+	    `ifdef 4x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23,
+	                            8'h30,8'h31,8'h32,8'h33
+	                       };
+	      	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};			
+	    `endif
+	    
+		 //option.weight=0;
 		}
 		VC_ID: coverpoint (vc_id_in[index]) {
 			bins valid[] = {2'b00,2'b01,2'b10,2'b11};
@@ -116,83 +125,92 @@ noc_pkt txns_out[TOTAL_CORES];
 	covergroup mesh_cg_out with function sample(int index);
 		//option.per_instance = 1;
 		SRC_ADDR: coverpoint (src_addr_out[index]) {
-		      //   bins valid[] = {
-		      //                      8'h00,8'h01,8'h02,8'h03,
-		      //                      8'h10,8'h11,8'h12,8'h13,
-		      //                      8'h20,8'h21,8'h22,8'h23,
-		      //                      8'h30,8'h31,8'h32,8'h33
-		      //                  };
-		      //	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};
-		        
-		        
-		      //  bins valid[] = {8'h00,8'h01,8'h10,8'h11};
-		      //	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
-
-		 //        bins valid[] = {
-		 //                           8'h00,8'h01,8'h02,
-		 //                           8'h10,8'h11,8'h12,
-		 //                           8'h20,8'h21,8'h22,
-		 //                           8'h30,8'h31,8'h32
-		 //                       };
-		 //     	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:$]};
-			
-		        
-		  //       bins valid[] = {
-		  //                          8'h00,8'h01,8'h02,8'h03,
-		  //                          8'h10,8'h11,8'h12,8'h13,
-		  //                          8'h20,8'h21,8'h22,8'h23
-		  //                      };
-		  //    	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
-		 
-         bins valid[] = {
-                            8'h00,8'h01,8'h02,
-                            8'h10,8'h11,8'h12
-                        };
-      	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
-		  
-		  
-		  //       bins valid[] = {
-		  //                          8'h00,8'h01,
-		  //                          8'h10,8'h11
-		  //                      };
-		  //    	 illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
+		`ifdef 2x2
+	        bins valid[] = {
+	        					8'h00,8'h01,
+	        					8'h10,8'h11
+	        			   };
+	      	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
+	    `endif
+	    `ifdef 2x3
+	        bins valid[] = {	
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12
+	                       };
+	      	illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
+	    `endif
+	    `ifdef 3x3
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12,
+	                            8'h20,8'h21,8'h22,
+	                            8'h30,8'h31,8'h32
+	                       };
+	     	illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:8'h2F],[8'h33:$]};
+	    `endif
+	    `ifdef 3x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23
+	                       };
+	     	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
+	    `endif
+	    `ifdef 4x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23,
+	                            8'h30,8'h31,8'h32,8'h33
+	                       };
+	      	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};			
+	    `endif
+	    
 		 //option.weight=0;
 		}
 		DST_ADDR: coverpoint (dst_addr_out[index]) {
-		//         bins valid[] = {
-		//                            8'h00,8'h01,8'h02,8'h03,
-		//                            8'h10,8'h11,8'h12,8'h13,
-		//                            8'h20,8'h21,8'h22,8'h23,
-		//                            8'h30,8'h31,8'h32,8'h33
-		//                        };
-		//	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};
-		//	bins valid[] = {8'h00,8'h01,8'h10,8'h11};
-		//	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
-
-
-		//         bins valid[] = {
-		//                            8'h00,8'h01,8'h02,
-		//                            8'h10,8'h11,8'h12,
-		//                            8'h20,8'h21,8'h22,
-		//                            8'h30,8'h31,8'h32
-		//                        };
-		//      	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:$]};
-
-         bins valid[] = {
-                            8'h00,8'h01,8'h02,
-                            8'h10,8'h11,8'h12
-                        };
-      	 illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
-		  
-		// bins valid[] = {
-		//                            8'h00,8'h01,8'h02,8'h03,
-		//                            8'h10,8'h11,8'h12,8'h13,
-		//                            8'h20,8'h21,8'h22,8'h23
-		//                        };
-		//      	 illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
-		//
-
-		       //option.weight=0;
+		`ifdef 2x2
+	        bins valid[] = {
+	        					8'h00,8'h01,
+	        					8'h10,8'h11
+	        			   };
+	      	illegal_bins ib = {[8'h02:8'h0F],[8'h12:$]};
+	    `endif
+	    `ifdef 2x3
+	        bins valid[] = {	
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12
+	                       };
+	      	illegal_bins ib = {[8'h03:8'h0F],[8'h13:$]};
+	    `endif
+	    `ifdef 3x3
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,
+	                            8'h10,8'h11,8'h12,
+	                            8'h20,8'h21,8'h22,
+	                            8'h30,8'h31,8'h32
+	                       };
+	     	illegal_bins ib = {[8'h03:8'h0F],[8'h13:8'h1F],[8'h23:8'h2F],[8'h33:$]};
+	    `endif
+	    `ifdef 3x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23
+	                       };
+	     	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:$]};
+	    `endif
+	    `ifdef 4x4
+	        bins valid[] = {
+	                            8'h00,8'h01,8'h02,8'h03,
+	                            8'h10,8'h11,8'h12,8'h13,
+	                            8'h20,8'h21,8'h22,8'h23,
+	                            8'h30,8'h31,8'h32,8'h33
+	                       };
+	      	illegal_bins ib = {[8'h04:8'h0F],[8'h14:8'h1F],[8'h24:8'h2F],[8'h34:$]};			
+	    `endif
+	    
+		 //option.weight=0;
 		}
 		VC_ID: coverpoint (vc_id_out[index]) {
 			bins valid[] = {2'b00,2'b01,2'b10,2'b11};
