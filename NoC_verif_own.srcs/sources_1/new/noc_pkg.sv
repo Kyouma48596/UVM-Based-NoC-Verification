@@ -35,7 +35,6 @@ parameter TOTAL_PACKET_SIZE =TOTAL_PAYLOADS_PER_PACKET+3;
 bit core_selection_vector[TOTAL_CORES-1:0];
 bit[26:0] pld[TOTAL_PAYLOADS_PER_PACKET];
 bit[7:0] arr[string];
-int PKT_CNT;
 
 uvm_event ev_001[TOTAL_CORES];
 uvm_event ev_000[TOTAL_CORES];

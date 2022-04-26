@@ -7,7 +7,10 @@ class noc_test extends uvm_test;
 	noc_sequence seq[TOTAL_CORES];
 	my_noc_config noc_config0;
 	bit core_selection_vector[TOTAL_CORES-1:0];
-	int dummy = $random(RANDOM_SEED);
+	int rand_seed;
+	int pkt_cnt;
+	int index;
+	int file_red;
 /*-------------------------------------------------------------------------------
 -- UVM Factory register
 -------------------------------------------------------------------------------*/
@@ -34,12 +37,8 @@ class noc_test extends uvm_test;
 			seq[i].core_seq_addr = noc_pkg::arr[$sformatf("CORE%0d_ADDR",i)];
 		end
 
-		foreach(core_selection_vector[i]) begin
-			core_selection_vector[i] = ($random()%2);
-		end
-		//core_selection_vector = {0,0,0,1,0,0,0,1,1}; //override for directed testing
-		`uvm_info("ENV", $sformatf("core_selection_vector is: %b", core_selection_vector), UVM_INFO)
-		noc_pkg::core_selection_vector = core_selection_vector;
+		file_red = $fopen("packet_num.txt","r");
+		$fscanf(file_red, "%d\n", pkt_cnt);
 		
 	endfunction : build_phase
 
@@ -51,15 +50,12 @@ class noc_test extends uvm_test;
 		super.run_phase(phase);
 		`uvm_info("TEST", "Test runphase", UVM_INFO)
 		phase.raise_objection(this);
-			foreach(seq[i]) begin
-				automatic int var_i = i;
-				fork
-					seq[var_i].start(env.agent[var_i].sequencer);
-				join_none
+			for (int i = 0; i < pkt_cnt; i++) begin
+				index = $urandom()%TOTAL_CORES;
+				seq[index].start(env.agent[index].sequencer);
 			end
-			wait fork;
-			#1000;
 		phase.drop_objection(this);
+
 	endtask : run_phase
 
 endclass : noc_test

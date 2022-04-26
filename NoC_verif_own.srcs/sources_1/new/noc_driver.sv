@@ -39,17 +39,17 @@ int core_num;
 
 	task core_drive(int n);
 
-		//`uvm_info("DIVER", "diver down", UVM_INFO)
+		//`uvm_info("DIVER", "diver down", UVM_HIGH)
 		begin
-			//`uvm_info("DIVER", "inside begin block?", UVM_INFO)
-			//`uvm_info("DIVER", $sformatf("printing vif values %d %d %d %d",vif.clk, vif.data_in, vif.data_out, vif.clr), UVM_INFO)
+			//`uvm_info("DIVER", "inside begin block?", UVM_HIGH)
+			//`uvm_info("DIVER", $sformatf("printing vif values %d %d %d %d",vif.clk, vif.data_in, vif.data_out, vif.clr), UVM_HIGH)
 			@(posedge vif.clk);
-			//`uvm_info("DIVER", "waited for posedge clk?", UVM_INFO)
+			//`uvm_info("DIVER", "waited for posedge clk?", UVM_HIGH)
 				vif.clr=1'b1;
 			@(posedge vif.clk);
-			//`uvm_info("DIVER", "waited for second posedge clk?", UVM_INFO)
+			//`uvm_info("DIVER", "waited for second posedge clk?", UVM_HIGH)
 				vif.clr=1'b0;
-			//`uvm_info("DIVER", "call?", UVM_INFO)
+			//`uvm_info("DIVER", "call?", UVM_HIGH)
 			drive_invalid(n);
 			get_drive(n);
         end
@@ -58,19 +58,19 @@ int core_num;
 
 	task get_drive(int n);
 		forever begin
-			`uvm_info("DIVER", "waiting for seq item", UVM_INFO)
+			`uvm_info("DIVER", "waiting for seq item", UVM_HIGH)
 			seq_item_port.get_next_item(req);
-			`uvm_info("DIVER", "got seq item", UVM_INFO)
+			`uvm_info("DIVER", "got seq item", UVM_HIGH)
 			assert(req.core_num == core_num)
 		    drive_data_in(n);
-		    `uvm_info("DIVER", "finished drive_data_in", UVM_INFO)
+		    `uvm_info("DIVER", "finished drive_data_in", UVM_HIGH)
 			@(posedge vif.clk);
 			seq_item_port.item_done();
 			end
 	endtask:get_drive
 
 	task drive_data_in(int n);
-		`uvm_info("DIVER", $sformatf("driving data (header): %b",req.header_flit), UVM_INFO)
+		`uvm_info("DIVER", $sformatf("driving data (header): %b",req.header_flit), UVM_HIGH)
 		@(posedge vif.clk);
 			vif.data_in[n] = req.header_flit;
 			trigger_events(n);
@@ -80,17 +80,17 @@ int core_num;
 		begin
 			
 		 	@(posedge vif.clk);
-		 	`uvm_info("DIVER", $sformatf("driving data (payload): %b",req.payload_flit[i]), UVM_INFO)
+		 	`uvm_info("DIVER", $sformatf("driving data (payload): %b",req.payload_flit[i]), UVM_HIGH)
 			vif.data_in[n] = req.payload_flit[i];
 			trigger_events(n);
 		end
 		@(posedge vif.clk);
-			`uvm_info("DIVER", $sformatf("driving data (tailer): %b",req.tailer_flit), UVM_INFO)
+			`uvm_info("DIVER", $sformatf("driving data (tailer): %b",req.tailer_flit), UVM_HIGH)
 			vif.data_in[n] =  req.tailer_flit;
 			trigger_events(n);
 		        repeat(1)		
 		@(posedge vif.clk);
-			`uvm_info("DIVER", $sformatf("driving data (invalid): %b",req.invalid_flit), UVM_INFO)
+			`uvm_info("DIVER", $sformatf("driving data (invalid): %b",req.invalid_flit), UVM_HIGH)
 			vif.data_in[n] =  req.invalid_flit;
 			trigger_events(n);
 		@(posedge vif.clk);
@@ -98,7 +98,7 @@ int core_num;
 	endtask:drive_data_in
 
 	task drive_invalid(int n);
-		`uvm_info("DRIVER", "Driving invalid", UVM_INFO)
+		`uvm_info("DRIVER", "Driving invalid", UVM_HIGH)
 		@(posedge vif.clk);
 	    
 		vif.data_in[n] = 32'h7fff_ffff;

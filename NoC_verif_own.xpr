@@ -55,7 +55,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="291"/>
+    <Option Name="WTXSimLaunchSim" Val="446"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -209,6 +209,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/gray_mod6.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/gray_mod6.v"/>
+          <Attr Name="ImportTime" Val="1643858466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/RTL/gray_mod8.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -304,6 +314,14 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/mesh_router4x4.v"/>
           <Attr Name="ImportTime" Val="1649306343"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/RTL/mesh_router8x8.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -548,25 +566,35 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/RTL/gray_mod6.v">
-        <FileInfo>
+      <File Path="$PSRCDIR/sources_1/new/core8.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core15.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core3.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core13.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core10.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core1.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core5.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core7.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core9.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core14.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core11.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core0.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core12.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core6.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core4.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/core2.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/packet_num.txt">
+        <FileInfo SFType="MIF">
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="C:/Users/Kyouma48596/Desktop/Digitale/Project Material/RTL/gray_mod6.v"/>
-          <Attr Name="ImportTime" Val="1643858466"/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/core7.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core12.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core11.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core10.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core14.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core13.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core15.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core8.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core9.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/seed.txt">
+        <FileInfo SFType="MIF">
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="tb_top"/>
@@ -580,13 +608,6 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/core3.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core0.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core1.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core6.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core5.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core4.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/core2.txt"/>
       <File Path="$PPRDIR/tb_top_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -605,11 +626,13 @@
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_top_behav.wcfg"/>
-        <Option Name="xsim.compile.xvlog.more_options" Val="-d 2x3=1"/>
+        <Option Name="xsim.compile.xvlog.more_options" Val="-d 2x2=1 -d FROM_RAND =1"/>
         <Option Name="xsim.elaborate.xelab.more_options" Val="-timescale 1ns/1ps"/>
         <Option Name="xsim.elaborate.coverage.type" Val="sbc"/>
         <Option Name="xsim.elaborate.coverage.library" Val="true"/>
         <Option Name="xsim.elaborate.coverage.celldefine" Val="true"/>
+        <Option Name="xsim.simulate.runtime" Val="100000ns"/>
+        <Option Name="xsim.simulate.xsim.more_options" Val="-testplusarg uvm_set_verbosity=UVM_HIGH"/>
       </Config>
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
